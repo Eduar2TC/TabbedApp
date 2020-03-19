@@ -9,10 +9,21 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-
+    
+    @IBOutlet weak var fechaLabel: UILabel!
+    
+    func obtenerFecha(){
+        let date = Date();
+        let dateFormatter = DateFormatter();
+        dateFormatter.dateStyle = .full;
+        
+        print(dateFormatter.string(from: date))
+        fechaLabel.text = dateFormatter.string(from: date);
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        obtenerFecha();
     }
 
 

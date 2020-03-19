@@ -1,80 +1,259 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Calendar-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="TabbedApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar-bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Uyp-nk-Vw0">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Fecha de hoy" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
+                                <rect key="frame" x="85" y="423.5" width="244.5" height="49"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="41"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18 | Mazo | 2020" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
+                                <rect key="frame" x="139" y="480.5" width="136" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Uyp-nk-Vw0" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="5NJ-bU-TdL"/>
                             <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="Uyp-nk-Vw0" secondAttribute="bottom" id="EYJ-jA-iLa"/>
+                            <constraint firstItem="Uyp-nk-Vw0" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="bTW-ru-nYW"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="Uyp-nk-Vw0" secondAttribute="trailing" id="idR-pq-1Tk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar" selectedImage="calendar" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="fechaLabel" destination="A5M-7J-77L" id="xMN-34-axk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--Second-->
-        <scene sceneID="wg7-f3-ORb">
+        <!--Temporalizador-->
+        <scene sceneID="MaO-BE-xh9">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="q7I-rE-pAB" customClass="ThirdViewController" customModule="TabbedApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CmW-hx-PLQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="run-bg.jpg" highlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JOC-8t-Xa7">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Cronometro" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="BXf-NT-iiV">
+                                <rect key="frame" x="95" y="66.5" width="226.5" height="50.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="42"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7yt-kR-Bap">
+                                <rect key="frame" x="141.5" y="140" width="131" height="181.5"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VuU-Yh-eEk">
+                                        <rect key="frame" x="0.0" y="0.0" width="131" height="61.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="47"/>
+                                        <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4Q-zM-O1y">
+                                        <rect key="frame" x="0.0" y="71.5" width="131" height="30"/>
+                                        <color key="backgroundColor" red="0.5097480955" green="0.72940907420000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Iniciar">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="startTimer:" destination="q7I-rE-pAB" eventType="touchUpInside" id="dP8-Tb-fmW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCS-jo-HLi">
+                                        <rect key="frame" x="0.0" y="111.5" width="131" height="30"/>
+                                        <color key="backgroundColor" red="0.5097480955" green="0.72940907420000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Pausar">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="pauseTimer:" destination="q7I-rE-pAB" eventType="touchUpInside" id="t4I-CK-4Bk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqR-gk-ddI">
+                                        <rect key="frame" x="0.0" y="151.5" width="131" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Reiniciar">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="resetTimer:" destination="q7I-rE-pAB" eventType="touchUpInside" id="3P9-Ca-2gk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="JOC-8t-Xa7" firstAttribute="top" secondItem="Hv3-A2-NYU" secondAttribute="top" id="0XG-GZ-iZQ"/>
+                            <constraint firstItem="7yt-kR-Bap" firstAttribute="centerX" secondItem="JOC-8t-Xa7" secondAttribute="centerX" id="34m-ms-asu"/>
+                            <constraint firstItem="JOC-8t-Xa7" firstAttribute="leading" secondItem="Hv3-A2-NYU" secondAttribute="leading" id="5z4-H7-5c9"/>
+                            <constraint firstItem="BXf-NT-iiV" firstAttribute="leading" secondItem="JOC-8t-Xa7" secondAttribute="trailing" constant="-319" id="bdc-7d-x95"/>
+                            <constraint firstItem="JOC-8t-Xa7" firstAttribute="top" secondItem="BXf-NT-iiV" secondAttribute="bottom" constant="-73" id="e7C-IJ-eQM"/>
+                            <constraint firstItem="7yt-kR-Bap" firstAttribute="top" secondItem="BXf-NT-iiV" secondAttribute="bottom" constant="23" id="gO3-ef-kSC"/>
+                            <constraint firstItem="Hv3-A2-NYU" firstAttribute="bottom" secondItem="JOC-8t-Xa7" secondAttribute="bottom" id="gbl-Nw-xLw"/>
+                            <constraint firstItem="Hv3-A2-NYU" firstAttribute="trailing" secondItem="JOC-8t-Xa7" secondAttribute="trailing" id="jQa-DC-5W3"/>
+                            <constraint firstItem="JOC-8t-Xa7" firstAttribute="top" secondItem="Hv3-A2-NYU" secondAttribute="top" id="sHV-eO-IF7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Hv3-A2-NYU"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Temporalizador" image="temp-icon" selectedImage="temp-icon" id="hPj-qy-USA"/>
+                    <connections>
+                        <outlet property="pauseButton" destination="GCS-jo-HLi" id="BFk-Y1-zbf"/>
+                        <outlet property="resetButton" destination="fqR-gk-ddI" id="sLw-EQ-1pH"/>
+                        <outlet property="startButton" destination="R4Q-zM-O1y" id="RUe-dN-jU8"/>
+                        <outlet property="timeLabel" destination="VuU-Yh-eEk" id="wfn-mc-Xxm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="opZ-fW-Pcl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1479.7101449275362" y="13.392857142857142"/>
+        </scene>
+        <!--Alarm-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="TabbedApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock-bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bul-6e-x8R">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="u6C-RC-Ioa">
+                                <rect key="frame" x="47" y="74" width="320" height="440.5"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="AfH-yc-sor">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="216"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="datePickerChanged:" destination="8rJ-Kc-sve" eventType="valueChanged" id="vmQ-sW-qhA"/>
+                                        </connections>
+                                    </datePicker>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="N49-fF-hXd">
+                                        <rect key="frame" x="0.0" y="366" width="320" height="74.5"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Alarma" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="50.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="42"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00/00/00, 00:00 PM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzP-X5-sjP">
+                                                <rect key="frame" x="0.0" y="50.5" width="320" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <variation key="widthClass=regular" spacing="232"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="bul-6e-x8R" secondAttribute="bottom" id="1ex-0O-DUC"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="u6C-RC-Ioa" secondAttribute="trailing" constant="26" id="27h-oG-f2N"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="bul-6e-x8R" secondAttribute="trailing" id="5Bl-RI-KTf"/>
+                            <constraint firstItem="u6C-RC-Ioa" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="49" id="5SN-vI-pc6"/>
+                            <constraint firstItem="u6C-RC-Ioa" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="16" id="AKU-Lj-6Zd"/>
+                            <constraint firstItem="u6C-RC-Ioa" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="30" id="Ckb-PQ-31z"/>
+                            <constraint firstItem="bul-6e-x8R" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="K0V-N6-669"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="u6C-RC-Ioa" secondAttribute="bottom" constant="133" id="Y80-oV-pnT"/>
+                            <constraint firstItem="bul-6e-x8R" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="dXo-8l-yBt"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="u6C-RC-Ioa" secondAttribute="trailing" constant="47" id="mgc-Jf-6Fq"/>
+                            <constraint firstItem="u6C-RC-Ioa" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="47" id="tic-2Z-s7m"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="27h-oG-f2N"/>
+                                <exclude reference="Y80-oV-pnT"/>
+                                <exclude reference="mgc-Jf-6Fq"/>
+                                <exclude reference="5SN-vI-pc6"/>
+                                <exclude reference="AKU-Lj-6Zd"/>
+                                <exclude reference="Ckb-PQ-31z"/>
+                                <exclude reference="tic-2Z-s7m"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="mgc-Jf-6Fq"/>
+                                <include reference="Ckb-PQ-31z"/>
+                                <include reference="tic-2Z-s7m"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="27h-oG-f2N"/>
+                                <include reference="Y80-oV-pnT"/>
+                                <include reference="5SN-vI-pc6"/>
+                                <include reference="AKU-Lj-6Zd"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Alarm" image="alarm-icon" selectedImage="alarm-icon" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="mzP-X5-sjP" id="Lfg-c7-G3k"/>
+                        <outlet property="datePicker" destination="AfH-yc-sor" id="wNj-UJ-CCe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="748.66071428571422" y="359.4202898550725"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -88,6 +267,7 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="q7I-rE-pAB" kind="relationship" relationship="viewControllers" id="x0H-Hb-K5O"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -96,7 +276,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="alarm-icon" width="32" height="32"/>
+        <image name="calendar" width="32" height="32"/>
+        <image name="calendar-bg.jpg" width="408" height="204"/>
+        <image name="clock-bg.jpg" width="1555.199951171875" height="1036.800048828125"/>
+        <image name="run-bg.jpg" width="1435.199951171875" height="956.8800048828125"/>
+        <image name="temp-icon" width="32" height="32"/>
     </resources>
 </document>

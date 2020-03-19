@@ -16,6 +16,13 @@
 		5203B5352421FDF7008085A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5203B5332421FDF7008085A8 /* LaunchScreen.storyboard */; };
 		5203B5402421FDF8008085A8 /* TabbedAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5203B53F2421FDF8008085A8 /* TabbedAppTests.swift */; };
 		5203B54B2421FDF8008085A8 /* TabbedAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5203B54A2421FDF8008085A8 /* TabbedAppUITests.swift */; };
+		5203B56024220D55008085A8 /* calendar-bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5203B55F24220D55008085A8 /* calendar-bg.jpg */; };
+		5203B56224221B85008085A8 /* clock-bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5203B56124221B85008085A8 /* clock-bg.jpg */; };
+		5203B56424221D40008085A8 /* temp-bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5203B56324221D40008085A8 /* temp-bg.jpg */; };
+		5203B56624221F82008085A8 /* run-bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5203B56524221F82008085A8 /* run-bg.jpg */; };
+		5203B56A24222AF8008085A8 /* splash-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5203B56924222AF8008085A8 /* splash-logo.png */; };
+		5203B56D24233235008085A8 /* 01 Cyka Blyat - Radio Edit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5203B56C24233235008085A8 /* 01 Cyka Blyat - Radio Edit.mp3 */; };
+		5203B57024236F20008085A8 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5203B56E2423672C008085A8 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,13 @@
 		5203B5462421FDF8008085A8 /* TabbedAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabbedAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5203B54A2421FDF8008085A8 /* TabbedAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbedAppUITests.swift; sourceTree = "<group>"; };
 		5203B54C2421FDF8008085A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5203B55F24220D55008085A8 /* calendar-bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "calendar-bg.jpg"; sourceTree = "<group>"; };
+		5203B56124221B85008085A8 /* clock-bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "clock-bg.jpg"; sourceTree = "<group>"; };
+		5203B56324221D40008085A8 /* temp-bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "temp-bg.jpg"; sourceTree = "<group>"; };
+		5203B56524221F82008085A8 /* run-bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "run-bg.jpg"; sourceTree = "<group>"; };
+		5203B56924222AF8008085A8 /* splash-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash-logo.png"; sourceTree = "<group>"; };
+		5203B56C24233235008085A8 /* 01 Cyka Blyat - Radio Edit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 Cyka Blyat - Radio Edit.mp3"; sourceTree = "<group>"; };
+		5203B56E2423672C008085A8 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +115,13 @@
 		5203B5252421FDE8008085A8 /* TabbedApp */ = {
 			isa = PBXGroup;
 			children = (
+				5203B56B24233217008085A8 /* files */,
+				5203B55E24220D0F008085A8 /* images */,
 				5203B5262421FDE8008085A8 /* AppDelegate.swift */,
 				5203B5282421FDE8008085A8 /* SceneDelegate.swift */,
 				5203B52A2421FDE8008085A8 /* FirstViewController.swift */,
 				5203B52C2421FDE8008085A8 /* SecondViewController.swift */,
+				5203B56E2423672C008085A8 /* ThirdViewController.swift */,
 				5203B52E2421FDE8008085A8 /* Main.storyboard */,
 				5203B5312421FDF7008085A8 /* Assets.xcassets */,
 				5203B5332421FDF7008085A8 /* LaunchScreen.storyboard */,
@@ -129,6 +146,26 @@
 				5203B54C2421FDF8008085A8 /* Info.plist */,
 			);
 			path = TabbedAppUITests;
+			sourceTree = "<group>";
+		};
+		5203B55E24220D0F008085A8 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				5203B56924222AF8008085A8 /* splash-logo.png */,
+				5203B56124221B85008085A8 /* clock-bg.jpg */,
+				5203B55F24220D55008085A8 /* calendar-bg.jpg */,
+				5203B56324221D40008085A8 /* temp-bg.jpg */,
+				5203B56524221F82008085A8 /* run-bg.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		5203B56B24233217008085A8 /* files */ = {
+			isa = PBXGroup;
+			children = (
+				5203B56C24233235008085A8 /* 01 Cyka Blyat - Radio Edit.mp3 */,
+			);
+			path = files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +272,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5203B56424221D40008085A8 /* temp-bg.jpg in Resources */,
+				5203B56224221B85008085A8 /* clock-bg.jpg in Resources */,
 				5203B5352421FDF7008085A8 /* LaunchScreen.storyboard in Resources */,
+				5203B56A24222AF8008085A8 /* splash-logo.png in Resources */,
+				5203B56624221F82008085A8 /* run-bg.jpg in Resources */,
 				5203B5322421FDF7008085A8 /* Assets.xcassets in Resources */,
+				5203B56024220D55008085A8 /* calendar-bg.jpg in Resources */,
 				5203B5302421FDE8008085A8 /* Main.storyboard in Resources */,
+				5203B56D24233235008085A8 /* 01 Cyka Blyat - Radio Edit.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +307,7 @@
 			files = (
 				5203B52D2421FDE8008085A8 /* SecondViewController.swift in Sources */,
 				5203B52B2421FDE8008085A8 /* FirstViewController.swift in Sources */,
+				5203B57024236F20008085A8 /* ThirdViewController.swift in Sources */,
 				5203B5272421FDE8008085A8 /* AppDelegate.swift in Sources */,
 				5203B5292421FDE8008085A8 /* SceneDelegate.swift in Sources */,
 			);
